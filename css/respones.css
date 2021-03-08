@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@media all and (max-width:980px){
+
+    /* header */
+    #wrap #header .wrap .gap .container #nav {display:none;position:absolute;top:80px;left:0;width:100%;background:#fff;text-align:left;}
+
+    #wrap #header .wrap .gap .container #nav > ul > li {display:block;margin:0;}
+    #wrap #header .wrap .gap .container #nav > ul > li > a {color:rgba(0,0,0, .7);line-height:45px;text-indent:20px;}
+    #wrap #header .wrap .gap .container #nav > ul > li > a:hover {color:rgba(0,0,0, 1);}
+
+    /* section1 */
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box {width:61.2244898vw;height:37.75510vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap {padding:10vw 11.42857vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 {padding-bottom:4.897959vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 h3 {font-size:1.42857vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 h3 span:nth-child(2) {width:7.14285vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 h3 span i {width: 5.10204vw;}
+    
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 {width:100%;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 h2 {font-size: 4.897959vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 span {width:6.12244vw;height:6.12244vw; padding: 2.65306vw 0;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 span a {line-height: 6.12244vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 span a i {font-size: 1.53061vw;}
+    
+}
+
+/* 창 넓이가 980px이하이면서 가로형 모드(landscape) 이면  */
+/* 섹션1의 높이를 600px로 고정한다. */
+
+@media all and (max-width:980px) and (orientation:landscape){
+    #wrap #main #section1 {height:600px;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box {display: none;}
+}
+
+/* 창 넓이가 980px이하이면서 세로형 모드(portrait) 이면  */
+/* 섹션1의 높이를 600px로 고정한다. */
+
+@media all and (max-width:980px) and (orientation:portrait){
+    #wrap #main #section1 {height:600px;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box {display: block;}
+}
